@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas_13</title>
+    <link rel="stylesheet" href="w3.css">
+</head>
+
+<body>
+    <div class="w3-container w3-gray w3-card">
+    <center>
+      <img src="img/header.png" width="100%">
+    </center>
+    </div>
+
+    <div class="w3-bar w3-gray">
+        <button class="w3-bar-item w3-button" onclick="openKota('Home')">Home</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Top')">Makan</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Bottom')">Tidur</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Left')">Gen</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Right')">Lari</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Fading')">Umur</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Opacity')">Telinga</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Animasi')">Profile</button>
+
+        <div id="Semua" class="w3-dropdown-hover" style="display: block;">
+            <button class="w3-button">All</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <button class="w3-bar-item w3-button" onclick="openKota('Home')">Home</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Top')">Makan</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Bottom')">Tidur</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Left')">Gen</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Right')">Lari</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Fading')">Umur</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Opacity')">Telinga</button>    
+            <button class="w3-bar-item w3-button" onclick="openKota('Animasi')">Profile</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="Home" class="w3-container kota w3-gray w3-animate-zoom" style="display:block">
+    <center>
+        <h1>Ini Kucing</h1>
+        <img src="img/1.jpg" width="100%">
+        <br>
+    </center>
+    </div>
+
+    <div id="Top" class="w3-container kota w3-animate-top w3-gray" style="display:none">
+    <center>
+        <h1>Tidak Bisa Merasakan Manis</h1>
+        <p>Mengejutkan, bukan? Ternyata kucing merupakan hewan mamalia yang tidak bisa mengenali rasa manis. Padahal setiap mamalia memiliki gen yang bisa menerima rasa manis, lho Grameds.
+           Biasanya hewan mamalia memiliki reseptor di ujung sel perasa bernama T1R2 dan T1R3 untuk merasakan manis. Namun, sel perasa tersebut tidak berfungsi dengan baik pada kucing. Nah, itulah alasan mengapa kucing sebagai hewan mamalia tidak bisa merasakan manis.</p>
+        <img src="img/2.jpg" width="100%">
+    </center>
+    </div>
+
+    <div id="Bottom" class="w3-container kota w3-animate-bottom w3-gray" style="display:none">
+    <center>
+        <h1>Menghabiskan 70% Hidupnya Untuk Tidur</h1>
+        <p>Kucing kerap dijuluki sebagai hewan peliharaan pemalas. Grameds pasti lebih sering melihatnya tidur daripada bermain, bukan? Ya, kucing ternyata bisa menghabiskan waktu hanya untuk tidur selama 15-20 jam per hari.
+           Wah, lama juga, ya. Mengapa kucing menghabiskan 70% hidupnya hanya untuk tidur? Kucing sebagai hewan predator kecil yang hidup di tengah-tengah manusia membutuhkan tenaga lebih untuk berburu. Tidur menjadi salah satu cara kucing untuk menyimpan energinya.</p>
+        <img src="img/3.jpg" width="100%">
+    </center>
+    </div>
+    
+    <div id="Left" class="w3-container kota w3-animate-left w3-gray" style="display:none">
+    <center>
+        <h1>Memiliki Gen 95,6% Sama dengan Harimau</h1>
+        <p>Kucing yang senang mengendus, mengintai, dan menerkam mangsanya ternyata memiliki gen 95,6% dengan harimau. Hal tersebut membuat perilaku kucing kurang lebih sama dengan harimau.</p>
+        <img src="img/4.jpg" width="100%">
+    </center>
+    </div>
+
+    <div id="Right" class="w3-container kota w3-animate-right w3-gray" style="display:none">
+    <center>
+        <h1>Dapat Berlari dengan Sangat Cepat</h1>
+        <p>Dalam keadaan terancam, kucing rumahan yang kerap kita temui dapat berlari dengan sangat cepat. Kemampuan kucing dalam urusan kecepatan tak perlu diragukan lagi. Kucing berlari untuk menangkap hewan atau menghindar dari berbagai ancaman berbahaya yang akan menimpa dirinya.</p>
+        <img src="img/5.jpg" width="100%">
+    </center>
+    </div>
+
+    <div id="Fading" class="w3-container kota w3-animate-fading w3-gray" style="display:none">
+    <center>
+        <h1>Kucing Tertua di Dunia Hidup Selama 38 Tahun</h1>
+        <p>Kucing sebagai mamalia crepuscular memiliki rata-rata umur antara 12-15 tahun. Seekor kucing di Austin, Texas, Amerika Serikat dinobatkan sebagai kucing tertua diduni   yang hidup dengan umur 38 tahun lebih 3 hari.
+          Kucing bernama Creme Puff ini tercatat di Guinnes World Records (GWR) hidup sejak tahun 1967 sampai 2005. Pemiliknya pasti merawat Creme Puff dengan sangat baik, ya. Rahasia umur panjang Creme Puff adalah mengonsumsi daging asap, telur, asparagus, dan brokoli.</p>
+        <img src="img/6.jpg" width="100%">
+    </center>
+    </div>
+
+    <div id="Opacity" class="w3-container kota w3-animate-opacity w3-gray" style="display:none">
+    <center>
+        <h1>Telinga Kucing Mampu Berputar 180°</h1>
+        <p>Pernahkah Grameds melihat kucing memutar telinganya? Hewan peliharaan yang satu ini memiliki kemampuan memutar telinganya hingga 180°, lho Grameds.
+           Kucing memiliki 32 jaringan otot yang dapat mengendalikan telinganya. Dengan otot sebanyak itu, kucing mampu menggerakkan telinganya tanpa menoleh sumber suara yang didengarnya.</p>
+        <img src="img/7.jpg" width="100%">
+      </center>
+    </div>
+    
+    <div id="Animasi" class="w3-container kota w3-animate-zoom w3-gray" style="display:none">
+      <center>
+          <h1>Profile Seputar Saya</h1>
+          <h2>Nama -> Laurentius <br>
+            <img src="img/8.jpg" width="100%"><br>
+            NIM -> 10122221<br>
+            Kelas -> IF-6
+          </h2>
+        </center>
+      </div>
+
+    <script>
+        function openKota(namakota) {
+            var i;
+            var x = document.getElementsByClassName("kota");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(namakota).style.display = "block";
+        }
+    </script>
+</body>
+</html>
